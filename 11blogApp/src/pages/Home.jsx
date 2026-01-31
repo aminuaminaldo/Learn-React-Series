@@ -14,7 +14,7 @@ function Home() {
   }, []);
   if (posts.length === 0) {
     return (
-      <div w-full py-8>
+      <div className="w-full py-8">
         <Container>
           <div className="flex flex-wrap">
             <h1>Login to read all posts</h1>
@@ -24,7 +24,7 @@ function Home() {
     );
   }
   return (
-    <div w-full py-8>
+    <div className="w-full py-8">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {posts.map((post) => {
