@@ -18,6 +18,7 @@ function Header() {
   return (
     <header className="py-3 shadow bg-gray-500">
       <Container>
+        {/* this is for test */}
         <nav className="flex">
           <div className="mr-4">
             <Link to="/">
@@ -37,7 +38,7 @@ function Header() {
                     {item.name}
                   </button>
                 </li>
-              ) : null
+              ) : null,
             )}
             {authStatus && (
               <li>
